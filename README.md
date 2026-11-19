@@ -143,9 +143,3 @@ Saat container dijalankan pertama kali, Flyway otomatis membuat akun bawaan beri
 
 ---
 
-## Catatan Keamanan Produksi
-
-Sebelum men-deploy sistem ke server publik (*production*):
-1. Ganti nilai `JWT_SECRET`, `MYSQL_ROOT_PASSWORD`, `MYSQL_PASSWORD`, dan isi `REDIS_PASSWORD` di dalam file `.env`.
-2. Ganti sertifikat SSL *self-signed* di `nginx/certs/` dengan sertifikat TLS resmi (seperti Let's Encrypt).
-3. Batasi `CORS_ALLOWED_ORIGINS` hanya ke domain frontend resmi yang digunakan.
