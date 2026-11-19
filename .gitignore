@@ -1,0 +1,27 @@
+﻿# Compiled class file & Maven build
+target/
+!.mvn/wrapper/maven-wrapper.jar
+*.jar
+*.war
+*.ear
+
+# Environment & Secrets (Wajib di-ignore demi keamanan)
+.env
+.env.*
+!.env.example
+nginx/certs/*.pem
+nginx/certs/*.key
+
+# IDE & OS
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
